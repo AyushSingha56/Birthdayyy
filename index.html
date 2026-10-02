@@ -381,9 +381,31 @@
     }
 
     @media (max-width: 768px) {
-      .bg-polaroid { display: none; }
-      .deck-viewport { width: 92vw; height: 580px; }
-      .card-photo img { height: 180px; }
+      .bg-polaroid { 
+        display: block !important; 
+        width: 85px !important; 
+        padding: 5px 5px 14px 5px !important;
+        opacity: 0.75;
+      }
+      .bg-polaroid img { 
+        height: 75px !important; 
+      }
+      .p-left { 
+        left: -8px !important; 
+        top: 14% !important; 
+        transform: rotate(-12deg) scale(0.9) !important; 
+      }
+      .p-right { 
+        right: -8px !important; 
+        top: 16% !important; 
+        transform: rotate(12deg) scale(0.9) !important; 
+      }
+      .p-bottom { 
+        display: none; /* keep bottom hidden so it doesn't block the nav bar */ 
+      }
+
+      .deck-viewport { width: 90vw; height: 590px; }
+      .card-photo img { height: 190px; }
     }
   </style>
 </head>
